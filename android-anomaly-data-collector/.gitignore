@@ -1,0 +1,21 @@
+# Android build files
+**/build/
+**/captures/
+**/.externalNativeBuild/
+**/.cxx/
+
+# Gradle files
+.gradle/
+local.properties
+*.log
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+
+# Node modules (frontend)
+node_modules/
+
+# OS junk
+.DS_Store
+Thumbs.db

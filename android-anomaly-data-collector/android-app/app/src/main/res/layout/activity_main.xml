@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Battery Level -->
+    <TextView
+        android:id="@+id/tvBattery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Battery Level: --%"
+        android:textSize="18sp" />
+
+    <!-- Accelerometer Activity -->
+    <TextView
+        android:id="@+id/tvAccel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accel magnitude: --"
+        android:layout_marginTop="12dp"
+        android:textSize="16sp" />
+
+    <!-- Gyroscope Activity -->
+    <TextView
+        android:id="@+id/tvGyro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gyro values: x=-- y=-- z=--"
+        android:layout_marginTop="12dp"
+        android:textSize="16sp" />
+
+    <!-- App Status -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Behaviour monitoring active"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp" />
+
+</LinearLayout>
