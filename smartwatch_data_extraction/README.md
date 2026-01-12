@@ -84,9 +84,4 @@ This module is designed for:
 
 ---
 
-## 🗣️ One-Line Summary (For Resume / Viva)
-
-> “This module extracts real-time heart rate and battery data from a smartwatch using BLE and transmits it to a remote backend through a REST API.”
-
----
 
