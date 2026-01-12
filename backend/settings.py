@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-ib(94)r6tdb=ig6&wd#*1y6^$lmtfj1qxi!c=bh1lzo=(@htcj'
+SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "unsafe-secret-key-for-dev-only")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -125,4 +126,5 @@ STATIC_URL = 'static/'
 # --- django-cors-headers development setting ---
 # Allow all origins while testing locally. Change for production.
 CORS_ALLOW_ALL_ORIGINS = True
+
 
